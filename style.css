@@ -1,0 +1,113 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+:root{
+    --background-color:hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+
+}
+
+
+
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: var(--background-color);
+    background-image: url(images/pattern-background-desktop.svg);
+    background-position:top;
+    background-repeat: no-repeat;
+    color: var(--Dark-blue);
+}
+
+.canvas{
+    margin: 5% auto;
+    width:400px;
+    height: fit-content;
+    background-color: var(--Very-pale-blue);
+    border-radius: 15px;
+    box-shadow: 0px 7px 6px 0px #8888889e;
+}
+
+.hero img{
+    width:100%;
+    border-radius: 15px 15px 0 0;
+    
+}
+.rest h1{
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+    text-align: center;
+
+}
+ .rest p{
+    text-align: center;
+    padding: 0 30px 0 30px;
+
+ }
+
+ .plan{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "music_icon annual_plan change "
+    "music_icon price change"
+    ;
+ }
+ .music_icon{
+    grid-area: music_icon;
+    justify-self: end;
+    margin-right: 10px;
+ }
+ .annual_plan{
+    grid-area: annual_plan;
+    font-weight: bold;
+ }
+
+ .change{
+    grid-area: change;
+    color:var(--Desaturated-blue);
+ }
+ .change a{
+
+    color:var(--Desaturated-blue);
+ }
+
+ .price{
+    grid-area: price;
+ }
+.butt{
+    text-align: center;
+}
+ .payment{
+    background-color: var(--Bright-blue);
+    border: none;
+    width: 80%;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 15px;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+ }
+ .payment :hover{
+
+    background-color: var(--Desaturated-blue);
+ }
+
+ .cancel_order{
+    text-align: center;
+    margin-bottom: 30px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: var(--Desaturated-blue);
+ }
+
+ .cancel_order a{
+
+    text-decoration: none;
+    color: var(--Desaturated-blue);
+ }
