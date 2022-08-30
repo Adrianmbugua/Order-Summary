@@ -21,7 +21,7 @@ body{
     color: var(--Dark-blue);
 }
 
-.canvas{
+main{
     margin: 5% auto;
     width:400px;
     height: fit-content;
@@ -106,6 +106,9 @@ body{
     color: var(--Desaturated-blue);
  }
 
+ h4{
+   font-size:medium;
+ }
  .cancel_order a{
 
     text-decoration: none;
